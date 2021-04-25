@@ -1,3 +1,5 @@
+// Fonte: https://www.w3schools.com/jsref/jsref_splice.asp
+
 const countryList = [ "Argentina","Armenia","Australia","Azerbaijan","Bahamas","Brazil","Burkina Faso", "Costa Rica","Mauritania","St Vincent","Uganda","United Arab Emirates","Uruguay","Uzbekistan","Venezuela"];
 /* 
 countryList.splice(2, 1);

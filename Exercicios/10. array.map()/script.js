@@ -1,3 +1,6 @@
+/// Fonte: https://www.w3schools.com/jsref/jsref_map.asp
+
+
 const usuarios = [
     {user:234, name: 'Marcia', idade:40 },
     {user:235, name: 'Lorena', idade:20 },

@@ -1,3 +1,6 @@
+//Fonte: https://www.w3schools.com/js/tryit.asp?filename=tryjs_loop_for
+
+
 const listagemDeFrutas = ["Uva", "Banana", "Manga", "Cajá", "Pinha", "Maçã", "Melão"];
 
 for (let index = 0; index < listagemDeFrutas.length; index++) {

@@ -1,3 +1,5 @@
+//fonte:https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_unshift
+
 const listagemDeFrutas = [ "Uva", "Banana", "Manga", "Cajá", "Pinha", "Maçã", "Melão"];
 
 /* listagemDeFrutas.unshift('Taperebá', 'Cupuaçu', 'Muruci');

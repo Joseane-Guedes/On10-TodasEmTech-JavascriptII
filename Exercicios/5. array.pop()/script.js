@@ -1,3 +1,5 @@
+//Fonte: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_pop
+
 const listagemDeFrutas = [ "Uva", "Banana", "Manga", "Cajá", "Pinha", "Maçã", "Melão"];
 
 /* const ultimoElementoListagem = listagemDeFrutas.pop();

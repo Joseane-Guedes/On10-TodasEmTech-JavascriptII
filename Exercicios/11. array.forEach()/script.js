@@ -1,3 +1,4 @@
+//Fonte: https://www.w3schools.com/jsref/jsref_foreach.asp
 const numbers = [65, 44, 12, 4, 68];
 
 /* let sum = 0;

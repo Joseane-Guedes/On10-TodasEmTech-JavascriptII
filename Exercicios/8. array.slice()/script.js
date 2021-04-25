@@ -1,3 +1,5 @@
+//Fonte: https://www.w3schools.com/jsref/jsref_slice_array.asp
+
 const listagemDeFrutas = [ "Uva", "Banana", "Manga", "Cajá", "Pinha", "Maçã", "Melão"];
 
 /* const selectedItens = listagemDeFrutas.slice(1,4);
