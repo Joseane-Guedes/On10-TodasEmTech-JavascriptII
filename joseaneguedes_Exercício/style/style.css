@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background-image: linear-gradient(#e0c3fc, #8ec5fc, #ba7af8);
+}
+
+/* Estilização do Formulario  */
+label {
+	font-size: 1rem;
+	padding-bottom: 5px;
+}
+
+input {
+	margin-bottom: 20px;
+	padding: 10px;
+	border-color: #4baec1;
+}
+
+h1 {
+	color: whitesmoke;
+	text-align: center;
+}
+
+.formulario {
+	padding: 50px 20px 30px 20px;
+	display: flex;
+	justify-content: space-around;
+	text-align: left;
+	flex-direction: column;
+	background-color: #dbc2cf;
+	margin: 0 100px 0 100px;
+}
+
+.textoformulario {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+/*TABELA*/
+table {
+	letter-spacing: normal;
+	width: 100%;
+	padding: 5%;
+	text-align: center;
+	margin-top: auto;
+	border-collapse: separate;
+}
+
+th {
+	border: 1px solid #6d4ba3;
+	padding: 1%;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+}
+
+tr {
+	background-color: #6d4ba3;
+	text-align: center;
+}
+
+td {
+	text-align: center;
+	height: 4vh;
+	padding: auto;
+	color: rgb(255, 255, 255);
+}
+
+.excluirLivro {
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 3rem;
+	margin-top: 20px;
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and (min-width: 768px) {
+	body {
+		background-color: red;
+	}
+
+	h1 {
+		text-align: center;
+		width: auto;
+
+	}
+
+	table {
+		letter-spacing: normal;
+		width: 100%;
+		padding: 5%;
+		text-align: center;
+		margin-top: auto;
+		border-collapse: separate;
+}
+
+table {
+	letter-spacing: normal;
+	width: 100%;
+	padding: 5%;
+	text-align: center;
+	margin: 0;
+	margin-top: auto;
+	border-collapse: separate;
+}
+
+th {
+	border: 1px solid #6d4ba3;
+	padding: 1%;
+	font-size: 1rem;
+  border-radius: 5px;
+	text-align: center;
+	color: white;
+}
+
+tr {
+	background-color: #6d4ba3;
+	text-align: center;
+ 
+}
+
+td {
+	text-align: center;
+	height: 4vh;
+	padding: auto;
+	color: rgb(255, 255, 255);
+}
+
+.excluirLivro {
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 3rem;
+	margin-top: 20px;
+}
+
+}
