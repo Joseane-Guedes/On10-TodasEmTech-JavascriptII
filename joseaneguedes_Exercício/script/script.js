@@ -1,5 +1,4 @@
-let books = [
-    {
+let books = [{
         isbn: "9781593275846",
         title: "Eloquent JavaScript, Second Edition",
         author: "Marijn Haverbeke",
@@ -50,3 +49,57 @@ let books = [
 ]
 
 
+function exibirDados(event) {
+    event.preventDefault();
+
+    let pegaAutor = document.querySelector('#autor').value;
+    let pegaTítulo = document.querySelector('#titulo').value;
+    let pegaISBN = document.querySelector('#isbn').value;
+    let pegaDataPublicacao = new Date(document.getElementById('dataPublicacao').value);
+    let parseDataPublicacao = pegaDataPublicacao.setDate(pegaDataPublicacao.getDate('pt-br') + 1);
+
+
+    document.getElementById('resposta').innerHTML += `
+    <tr id="tabelaDeLivro">
+        <td>${pegaTítulo}</td>
+        <td>${pegaAutor}</td>
+        <td>${pegaISBN}</td>
+        <td>${pegaDataPublicacao}</td>
+    </tr>
+    `
+    limpardados()
+}
+
+
+let book = books.forEach((books) => {
+
+    const parseDate = new Date(books.published);
+    const getData = parseDate.toLocaleDateString('pt-br');
+    books.published = getData;
+})
+
+let selectionBooks = books.map(function (books) {
+    return `<tr>
+    <td>${books.title}</td>
+    <td>${books.author}</td>
+    <td>${books.isbn}</td>
+    <td>${books.published}</td>
+        </tr>`
+});
+
+document.querySelector("#resposta tbody").innerHTML = selectionBooks.join("");
+
+
+function limpardados() {
+    document.querySelector('#titulo').value = "";
+    document.querySelector('#autor').value = "";
+    document.querySelector('#isbn').value = "";
+    document.querySelector('#dataPublicacao').value = "";
+
+}
+
+document.querySelector("#botaoDelete").addEventListener('click', function exluirLivro(event) {
+    event.preventDefault();
+
+    document.getElementById('tabelaDeLivro').remove();
+})

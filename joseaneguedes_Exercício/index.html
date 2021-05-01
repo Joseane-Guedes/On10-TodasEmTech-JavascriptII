@@ -19,34 +19,26 @@
                 </label>
                 <input type="text" id="titulo" placeholder="Digite o título do Livro" onfocus=this.value='' required>
 
-
-
                 <label for="autor">
                     Autor(a)*
                 </label>
                 <input type="autor" id="autor" placeholder="Digite o autor do Livro" onfocus=this.value='' required>
-
 
                 <label for="isbn">
                     ISBN*
                 </label>
                 <input type="number" id="isbn" placeholder="Digite o ISBN do Livro">
 
-
-
                 <label for="paginas">
                     Páginas*
                 </label>
                 <input type="number" id="paginas" placeholder="Número de páginas">
 
+                <label for="dataPublicacao">Data de Publicação* </label>
 
-
-                <label for="dataPublicacao">
-                    Data de Publicação*
-                </label>
-                <input type="date" id="dataPublicacao" onfocus=this.value='' required>
+                <input type="date" class='news_imput' id="dataPublicacao" onfocus=this.value='' required>
             </div>
-            <!--Deixa essa div aqui-->
+
 
             <div class="textoformulario">
                 <input type="submit" class="button" name="enviar" id="botaoDeEnviar" value="ENVIAR">
@@ -62,15 +54,18 @@
                     <th>Autor(a)</th>
                     <th>ISBN</th>
                     <th>Data de Publicação</th>
-                    <th>Páginas</th>
-                    <th>Data de Cadastro</th>
                 </tr>
             </thead>
+            <tbody>
+
+            </tbody>
+
         </table>
 
         <div class="excluirLivro">
             <input type="button" class="botaoExcluir" id="botaoDelete" name="excluir" value="EXCLUIR">
         </div>
+
 
         </section>
     </main>
