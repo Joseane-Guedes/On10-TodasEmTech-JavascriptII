@@ -55,8 +55,8 @@ function exibirDados(event) {
     let pegaAutor = document.querySelector('#autor').value;
     let pegaTítulo = document.querySelector('#titulo').value;
     let pegaISBN = document.querySelector('#isbn').value;
-    let pegaDataPublicacao = new Date(document.getElementById('dataPublicacao').value);
-    let parseDataPublicacao = pegaDataPublicacao.setDate(pegaDataPublicacao.getDate('pt-br') + 1);
+    let pegaDataPublicacao = document.querySelector('#dataPublicacao').value;
+    /* let parseDataPublicacao = pegaDataPublicacao.setDate(pegaDataPublicacao.getDate('pt-br') + 1); */
 
 
     document.getElementById('resposta').innerHTML += `
@@ -67,18 +67,17 @@ function exibirDados(event) {
         <td>${pegaDataPublicacao}</td>
     </tr>
     `
-    limpardados()
+    limpardados();
 }
 
 
 let book = books.forEach((books) => {
-
     const parseDate = new Date(books.published);
     const getData = parseDate.toLocaleDateString('pt-br');
     books.published = getData;
 })
 
-let selectionBooks = books.map(function (books) {
+let selectBooks = books.map(function (books) {
     return `<tr>
     <td>${books.title}</td>
     <td>${books.author}</td>
@@ -87,19 +86,14 @@ let selectionBooks = books.map(function (books) {
         </tr>`
 });
 
-document.querySelector("#resposta tbody").innerHTML = selectionBooks.join("");
-
-
-function limpardados() {
-    document.querySelector('#titulo').value = "";
-    document.querySelector('#autor').value = "";
-    document.querySelector('#isbn').value = "";
-    document.querySelector('#dataPublicacao').value = "";
-
-}
-
-document.querySelector("#botaoDelete").addEventListener('click', function exluirLivro(event) {
+document.querySelector("#resposta tbody").innerHTML = selectBooks.join("");
+document.querySelector("#botaoDelete").addEventListener('click', function deleteBooks(event) {
     event.preventDefault();
-
     document.getElementById('tabelaDeLivro').remove();
 })
+
+
+
+/* 
+Fonte: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date
+*/

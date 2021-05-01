@@ -22,11 +22,10 @@ input {
 }
 
 h1 {
-	color: whitesmoke;
+	color: #6d4ba3;
 	text-align: center;
 	font-style: italic;
 	font-weight: bold;
-
 }
 
 .formulario {
@@ -85,64 +84,55 @@ td {
 
 /*RESPONSIVIDADE*/
 
-@media screen and (min-width: 768px) {
-	body {
-		background-color: red;
+@media screen and (max-width: 768px) {
+
+body {
+	background-color: red;
 	}
 
-	h1 {
-		text-align: center;
-		width: auto;
+h1 {
+	text-align: center;
+	width: auto;
 
 	}
 
-	table {
-		letter-spacing: normal;
-		width: 100%;
-		padding: 5%;
-		text-align: center;
-		margin-top: auto;
-		border-collapse: separate;
+table {
+	letter-spacing: normal;
+	width: 100%;
+	padding: 5%;
+	text-align: center;
+	margin-top: auto;
+	border-collapse: separate;
 	}
 
-	table {
-		letter-spacing: normal;
-		width: 100%;
-		padding: 5%;
-		text-align: center;
-		margin: 0;
-		margin-top: auto;
-		border-collapse: separate;
-	}
-
-	th {
-		border: 1px solid #6d4ba3;
-		padding: 1%;
-		font-size: 1rem;
-		border-radius: 5px;
-		text-align: center;
-		color: white;
+th {
+	border: 1px solid #6d4ba3;
+	padding: 1%;
+	font-size: 1rem;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
 	}
 
 	tr {
-		background-color: #6d4ba3;
-		text-align: center;
+	background-color: #6d4ba3;
+	text-align: center;
 
 	}
 
 	td {
-		text-align: center;
-		height: 4vh;
-		padding: auto;
-		color: rgb(255, 255, 255);
+	text-align: center;
+	height: 4vh;
+	padding: auto;
+	color: rgb(255, 255, 255);
 	}
 
 	.excluirLivro {
-		color: white;
-		padding: 15px 32px;
-		text-align: center;
-		font-size: 3rem;
-		margin-top: 20px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 3rem;
+	margin-top: 20px;
 	}
 
 }
